@@ -3,6 +3,50 @@
 @tailwind utilities;
 
 body {
-  background-color: #111;
-  color: white;
+  font-size: 16px;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+@layer components {
+  .text-stroke-white {
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+      1px 1px 0 white;
+  }
+
+  .text-title {
+    @apply text-4xl;
+  }
+
+  .text-subtitle {
+    @apply text-3xl;
+  }
+
+  .text-header-1 {
+    @apply text-2xl;
+  }
+
+  .text-header-2 {
+    @apply text-xl;
+  }
+
+  .text-header-3 {
+    @apply text-lg;
+  }
+
+  .text-body-1 {
+    @apply text-base;
+  }
+
+  .text-body-2 {
+    @apply text-sm;
+  }
+
+  .text-body-3 {
+    @apply text-xs;
+  }
+
+  .text-note {
+    @apply text-2xs;
+  }
 }
